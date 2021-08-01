@@ -49,6 +49,8 @@ In the Windows command line, run:
 wsl --import nix-flakes C:\Users\LexSong\WSL\nix-flakes .\nix-flakes.tar
 ```
 
+**TODO:** We need to export environment variables from the docker image to the WSL filesystem.
+
 ## TODO: Build and Export Docker Images with Nix
 
 ## References
