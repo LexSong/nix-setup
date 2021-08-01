@@ -13,7 +13,7 @@ We could use any linux distro with docker-cli. Let's use AlpineWSL here.
 
 ## Pull and Export Docker Images from [docker-nixpkgs](https://github.com/nix-community/docker-nixpkgs)
 
-With the docker-cli, run:
+With the Docker-cli, run:
 
 ```sh
 # Pull the latest nix-flakes image
@@ -23,7 +23,7 @@ docker pull docker.nix-community.org/nixpkgs/nix-flakes
 docker export $(docker create nix-flakes) -o ./nix-flakes.tar
 ```
 
-## Import the exported tar into WSL
+## Import the Exported Tar into WSL
 
 In the Windows command line, run:
 
