@@ -53,5 +53,6 @@ wsl --import nix-flakes C:\Users\LexSong\WSL\nix-flakes .\nix-flakes.tar
 
 ## References
 
-- https://docs.microsoft.com/en-us/windows/wsl/use-custom-distro
-- https://github.com/nix-community/docker-nixpkgs
+- [WSL 2 Installation Guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- [Import any Linux distribution to use with WSL](https://docs.microsoft.com/en-us/windows/wsl/use-custom-distro)
+- [docker-nixpkgs: docker images from nixpkgs](https://github.com/nix-community/docker-nixpkgs)
