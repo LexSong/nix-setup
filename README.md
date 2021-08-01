@@ -6,4 +6,4 @@ Some experiments I would like to do:
 - Start with nix-flakes and new Nix CLI.
 - Home-manager doesn't work well with the new Nix. However, I think I could use home-manager as nix flakes modules.
 
-## [Bootstrapping Nix on WSL](wsl-bootstrapping.md)
+## [Bootstrapping Nix on WSL](WSL-bootstrapping.md)
