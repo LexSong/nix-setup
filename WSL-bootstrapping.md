@@ -1,8 +1,26 @@
 # Bootstrapping Nix on WSL
 
-We could use any linux distro with docker-cli. Let's use AlpineWSL here.
+## Install WSL 2
 
-## Install [AlpineWSL](https://github.com/yuk7/AlpineWSL) with Docker-CLI
+1. Open the Command Prompt as Administrator and run:
+
+   ```batch
+   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+   ```
+
+   **Restart** the machine to enable WSL and Virtual Machine Platform.
+
+2. Download and install the [WSL2 Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi).
+3. Set WSL 2 as the default version:
+
+   ```batch
+   wsl --set-default-version 2
+   ```
+
+## Install [AlpineWSL](https://github.com/yuk7/AlpineWSL) with [Podman](https://podman.io)
+
+Let's use AlpineWSL with the daemonless Podman as our Docker replacement:
 
 1. Download and extract the [installer](https://github.com/yuk7/AlpineWSL/releases)
 2. Run Alpine.exe to extract rootfs and register to WSL
